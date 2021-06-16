@@ -1,0 +1,12 @@
+mutation {
+  addUser(loggedIn: false, userType: "", personData: {uid: 119, sid: "sid999", fname: "matt1", lname: "camp"}) {
+    user {
+      id
+      uid
+      sid
+      fname
+      lname
+    }
+  }
+}
+

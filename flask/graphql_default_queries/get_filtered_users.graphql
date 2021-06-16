@@ -1,0 +1,17 @@
+{
+  allUsers(filtering: {filters: [{sid_Icontains: "9"}]}) {
+    edges {
+      node {
+        id
+        fname
+        lname
+        loggedIn
+        group
+        userType
+        uid
+        sid
+      }
+    }
+  }
+}
+
