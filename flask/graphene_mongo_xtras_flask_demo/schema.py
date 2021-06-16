@@ -9,17 +9,17 @@ from graphene_mongo_xtras_flask_demo.mutations.sql_example import *
 from graphene_mongo_xtras_flask_demo.mutations.mongo_example import *
 from graphene_sqlalchemy import SQLAlchemyObjectType, SQLAlchemyConnectionField
 
+from graphene_mongo_extras.filtering.fields import FilteringConnectionField
+
 class Query(graphene.ObjectType):
     node = relay.Node.Field()
     # Allows sorting over multiple columns, by default over the primary key
     all_employees = SQLAlchemyConnectionField(Employee.connection)
     # Disable sorting over this field
     all_departments = SQLAlchemyConnectionField(Department.connection, sort=None)
-    all_users = MongoengineConnectionField(User)
+    all_users = FilteringConnectionField(User)
     all_people = MongoengineConnectionField(Person)
     all_groups = MongoengineConnectionField(Group)
-
-
 
 
 class Mutations(graphene.ObjectType):
@@ -32,4 +32,4 @@ class Mutations(graphene.ObjectType):
     
 
 
-schema = graphene.Schema(query=Query, mutation=Mutations)
+schema = graphene.Schema(query=Query, types=[User, Person, Group, Department, Employee], mutation=Mutations)
