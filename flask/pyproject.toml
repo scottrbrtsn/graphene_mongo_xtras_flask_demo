@@ -12,6 +12,7 @@ graphene_sqlalchemy = "^2.3.0"
 graphene-mongo = "^0.2.13"
 mongoengine = "^0.23.0"
 flask-mongoengine = "^1.0.0"
+pyhumps = "^3.0.2"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"

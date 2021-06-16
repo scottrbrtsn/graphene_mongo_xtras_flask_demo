@@ -7,9 +7,10 @@ from graphene_mongo_xtras_flask_demo.models.mongo_models import (
         Group as GroupModel
         )
 
-from graphene_mongo_extras.graphene_mongo_extras.fields import FilteringConnectionField
+from graphene_mongo_extras.filtering.fields import FilteringConnectionField
+from graphene_mongo_extras import MongoengineExtrasType
 
-class User(MongoengineObjectType):
+class User(MongoengineExtrasType):
     class Meta:
         model = UserModel
         interfaces = (Node,)
