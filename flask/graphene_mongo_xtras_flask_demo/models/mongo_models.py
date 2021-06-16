@@ -18,5 +18,6 @@ class Person(Document):
 class User(Person):
     group = StringField()
     logged_in = BooleanField()
-    groups = ListField(ReferenceField('Group'))
+    groups = ListField(StringField())
+#    groups = ListField(ReferenceField('Group'))
     user_type = StringField()
