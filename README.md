@@ -1,4 +1,5 @@
 # Welcome to graphene_mongo_xtras_flask_demo!
+This takes [graphene-mongo-extras](https://github.com/riverfr0zen/graphene-mongo-extras) and integrates it into a graphql-api cookie cutter project called [Cronus](https://gitlab.com/usmcamp0811/cronus/-/tree/graphql-api)
 
 Graphene Mongoengine Filtering Flask Demo
 # graphene_mongo_xtras_flask_demo
