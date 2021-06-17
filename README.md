@@ -4,6 +4,7 @@ This takes [graphene-mongo-extras](https://github.com/riverfr0zen/graphene-mongo
 Graphene Mongoengine Filtering Flask Demo
 # graphene_mongo_xtras_flask_demo
 
+1. `git clone https://github.com/scottrbrtsn/graphene_mongo_xtras_flask_demo.git`
 1. `cd flask`
 2. `poetry install`
 3. `poetry shell`
