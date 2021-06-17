@@ -32,4 +32,4 @@ class Mutations(graphene.ObjectType):
     
 
 
-schema = graphene.Schema(query=Query, types=[User], mutation=Mutations)
+schema = graphene.Schema(query=Query, types=[User, Employee, Department, Person, Group], mutation=Mutations)
