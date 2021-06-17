@@ -1,1 +1,0 @@
-from graphene_mongo_extras.tests.conftest import setup_mongo
